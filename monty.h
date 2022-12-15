@@ -1,5 +1,5 @@
-#ifndef MONTY
-#define MONTY
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -100,4 +100,4 @@ void free_dlistint(stack_t *head);
 /* main */
 void free_vglo(void);
 
-#endif
+#endif MONTY_H
