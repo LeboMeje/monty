@@ -31,7 +31,7 @@ void _div(stack_t **doubly, unsigned int cline)
 	}
 	aux = (*doubly)->next;
 	aux->n /= (*doubly)->n;
-	_pop(doubly, cline);
+	f_pop(doubly, cline);
 }
 
 /**
@@ -59,7 +59,7 @@ void _mul(stack_t **doubly, unsigned int cline)
 	}
 	aux = (*doubly)->next;
 	aux->n *= (*doubly)->n;
-	_pop(doubly, cline);
+	f_pop(doubly, cline);
 }
 
 /**
@@ -94,7 +94,7 @@ void _mod(stack_t **doubly, unsigned int cline)
 	}
 	aux = (*doubly)->next;
 	aux->n %= (*doubly)->n;
-	_pop(doubly, cline);
+	f_pop(doubly, cline);
 }
 
 /**

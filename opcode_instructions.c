@@ -15,10 +15,9 @@ void _push(stack_t **doubly, unsigned int cline)
 	{
 		dprintf(2, "L%u: ", cline);
 		dprintf(2, "usage: push integer\n");
-		free_vglo();
+			free_vglo();
 		exit(EXIT_FAILURE);
 	}
-
 	for (j = 0; vglo.arg[j] != '\0'; j++)
 	{
 		if (!isdigit(vglo.arg[j]) && vglo.arg[j] != '-')
@@ -35,7 +34,6 @@ void _push(stack_t **doubly, unsigned int cline)
 	else
 		add_dnodeint_end(doubly, n);
 }
-
 /**
  * _pall - prints all values on the stack
  *
@@ -45,10 +43,9 @@ void _push(stack_t **doubly, unsigned int cline)
  */
 void _pall(stack_t **doubly, unsigned int cline)
 {
-	stack_t *aux;
-
 	(void)cline;
 
+	stack_t (aux);
 	aux = *doubly;
 	while (aux)
 	{
@@ -56,7 +53,6 @@ void _pall(stack_t **doubly, unsigned int cline)
 		aux = aux->next;
 	}
 }
-
 /**
  * _pint - prints the value at the top of the stack
  *
@@ -77,7 +73,6 @@ void _pint(stack_t **doubly, unsigned int cline)
 	}
 	printf("%d\n", (*doubly)->n);
 }
-
 /**
  * _pop - removes the top element of the stack
  *
@@ -99,7 +94,6 @@ void _pop(stack_t **doubly, unsigned int cline)
 	*doubly = (*doubly)->next;
 	free(aux);
 }
-
 /**
  * _swap - swaps the top two elements of the stack
  *
